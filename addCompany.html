@@ -1,0 +1,37 @@
+<form name="f">
+    Company name<input type="text" id="cname"><br>
+    Turnover<input type="text" id="turnover"><br>
+    Number of employees<input type="text" id="noofemp"><br>
+    Area of Specialization<input type="text" id="area"><br>
+    Email<input type="text" id="email"><br>
+    Website<input type="text" id="website"><br>
+    Address<input type="text" id="address"><br>
+    Phone Number<input type="text" id="phone"><br>
+    
+    <input type="button" onclick="save()" value="Sumbit">
+</form>
+
+<script type="text/javascript">
+
+function save(){
+    var name = document.getElementById('cname').value;
+    var turnover = document.getElementById('turnover').value;
+    var emp = document.getElementById('noofemp').value;
+    var area = document.getElementById('area').value;
+    var email = document.getElementById('email').value;
+    var website = document.getElementById('website').value;
+    var address = document.getElementById('address').value;
+    var phone = document.getElementById('phone').value;
+
+    window.localStorage.setItem("name",name);
+    window.localStorage.setItem("turnover",name);
+    window.localStorage.setItem("emp",emp);
+    window.localStorage.setItem("area",area);
+    window.localStorage.setItem("email",email);
+    window.localStorage.setItem("website",website);
+    window.localStorage.setItem("address",address);
+    window.localStorage.setItem("phone",phone);
+    
+}
+
+</script>
