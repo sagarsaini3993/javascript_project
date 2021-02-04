@@ -1,0 +1,36 @@
+<h2>Welcome to Admin Page</h2>
+<form name="f">
+    Username<input type="text" id="name"><br>
+    Password<input type="text" id="password"><br>
+    <input type="button" id="submit" value="Submit" onclick="hodLogin()"><br>
+    
+        </form>
+
+        <script type="text/javascript">
+
+        function hodLogin(){
+            if(f.name.value == ""){
+        alert("Please fill username")
+        return;
+    }
+    // if(f.name.value.length < 5){
+    //     alert("Length of username must be more than 5");
+    //     return;
+    // }
+    if(f.password.value == ""){
+        alert("Please fill password")
+        return;
+    }
+    // if(f.password.value.length < 5){
+    //     alert("Length of password must be more than 5");
+    //     return;
+    // }
+    
+    if((f.name.value == "hod") && (f.password.value == "hod")){
+        window.location = "hod.html"
+    } else {
+        window.location = "student.html"
+    }
+        }
+        
+        </script>
